@@ -1,30 +1,18 @@
 # Star Wars: The Force Unleashed – Split-Screen Co-op Mod (PC)
 
-> ## GOG or Steam? Use the GOG version if you can
+> ## ⚠️ Compatibility: GOG version 1.2 ONLY
 >
-> The mod works on both the **GOG** and the **Steam** release of *Ultimate Sith Edition*. The game code is identical in both, but they get different amounts of memory:
->
-> | | GOG | Steam |
-> |---|---|---|
-> | Memory the game can use | **4 GB** (INSTALL.bat applies the 4 GB patch) | **2 GB** (the patch can't be applied) |
-> | Big levels with lots of spawned characters | Plenty of room | Gets tight sooner |
-> | Players far apart in a level | Plenty of room | Gets tight sooner |
->
-> **Why Steam is limited to 2 GB:** the game is a 32-bit program, so by default Windows gives it only 2 GB of memory. The 4 GB patch changes one setting in `SWTFU.exe` so Windows gives it 4 GB. The Steam `SWTFU.exe` is protected by Steam's copy protection, which refuses to start a changed exe (you'd get *"Application load error 3:0000065432"*). So INSTALL.bat leaves the Steam exe alone, and the game runs with 2 GB.
->
-> **Why 4 GB is worth having:** co-op keeps two players' areas of the level active at once, and every character you spawn from the mod menu (troopers, Rancors, bosses ...) loads more models into memory. With 4 GB there is room to spare for all of that. With 2 GB the game runs low sooner. The mod watches free memory and pulls Player 2 back next to Player 1 before it runs out, so it won't crash, but the players can't spread out as far or spawn as much.
->
-> **What to do on Steam:** normal co-op play works fine. Go easy on spawning many big characters at once. If Steam ever "verifies" or updates the game, just run INSTALL.bat again.
->
-> If you own both versions, play the GOG one.
+> This mod works **only** with the **GOG** release of *Star Wars: The Force Unleashed – Ultimate Sith Edition*, **version 1.2**.
+> It is **not** compatible with **Steam**, any other storefront, or any other version of the game **yet**.
+> On any other copy the mod switches itself off at start-up and the game runs as normal single player.
 
 > **Made for controllers.** Both players play with a gamepad. PC (mouse and keyboard) controls for Player 2 are **not implemented yet**.
 >
-> **You need your own copy of the game.** This mod contains no game files. It works with the **GOG** (v1.2) and **Steam** releases of *Star Wars: The Force Unleashed – Ultimate Sith Edition* (see above for why GOG is the better choice). At every start the mod checks that your `SWTFU.exe` contains the game code it was built for. On any other version it switches itself off and the game runs normally.
+> **You need your own copy of the game.** This mod contains no game files. It works only with the **GOG** release of *Star Wars: The Force Unleashed – Ultimate Sith Edition*, **v1.2** (see above). At every start the mod checks that your `SWTFU.exe` contains the game code it was built for. On any other version it switches itself off and the game runs normally.
 >
 > **PlayStation controllers work.** The mod reads Xbox-style (XInput) pads, so a DualShock 4 / DualSense needs Steam Input or DS4Windows. See [Controllers](#controllers).
 
-Two players play the whole story campaign together on one PC, each with their own half of the screen and their own camera. Built for the GOG release (Ultimate Sith Edition, v1.2), also runs on the Steam release, and tested on a ROG Ally connected to a TV.
+Two players play the whole story campaign together on one PC, each with their own half of the screen and their own camera. Built for the GOG release (Ultimate Sith Edition, v1.2) and tested on a ROG Ally connected to a TV.
 
 **Download:** get the newest zip from the [Releases page](../../releases/latest).
 
@@ -80,7 +68,7 @@ Spawning notes:
 - **Co-op death rule.** A player whose health runs out is *downed*: his half goes dark for 10 seconds, then he comes back next to the other player with full health. If both players go down, the game restarts from the checkpoint.
 - **Plug-and-play controllers.** Players follow the controllers that are connected, not fixed slots. A ROG Ally turning off its built-in controller when a Bluetooth pad connects does not mix up who is Player 1.
 - **1080p full screen**, widescreen, on a TV or the handheld screen.
-- **Large Address Aware (4 GB) patch** for SWTFU.exe so spawns from other levels fit in memory (a backup of the original exe is kept; GOG only).
+- **Large Address Aware (4 GB) patch** for SWTFU.exe so spawns from other levels fit in memory (a backup of the original exe is kept).
 - **Each half draws its own player's surroundings**, so the two views never mix: no flicker, no giant pieces of the level floating into the picture.
 
 ## Controllers
@@ -96,10 +84,10 @@ The mod uses **XInput** (Xbox-style) controllers:
 
 ## Installing
 
-1. Own and install *Star Wars: The Force Unleashed – Ultimate Sith Edition*: the GOG version (v1.2, recommended) or the Steam version.
-2. Extract the contents of the zip **into your game folder** (the folder that contains `SWTFU.exe`; on Steam: right-click the game - Manage - Browse local files). You should then have `dinput8.dll`, `INSTALL.bat` and the `coop` and `tools` folders next to `SWTFU.exe`.
+1. Own and install the **GOG** version of *Star Wars: The Force Unleashed – Ultimate Sith Edition* (v1.2). Other versions are not supported yet.
+2. Extract the contents of the zip **into your game folder** (the folder that contains `SWTFU.exe`). You should then have `dinput8.dll`, `INSTALL.bat` and the `coop` and `tools` folders next to `SWTFU.exe`.
 3. Double-click `INSTALL.bat` once. It:
-   - applies the 4 GB memory patch to `SWTFU.exe` (a backup is kept as `SWTFU.exe.before_4gb`; skipped on Steam, see above),
+   - applies the 4 GB memory patch to `SWTFU.exe` (a backup is kept as `SWTFU.exe.before_4gb`),
    - switches the game to controller mode,
    - sets full screen at 1080p (or the screen's size if it is smaller).
 
@@ -124,7 +112,7 @@ The mod uses **XInput** (Xbox-style) controllers:
 
 ## Version history
 
-- **v1.1** (19 Nov 2026): split-screen drawing fixed (no flicker, no giant black walls or floating pieces of the level, players and walls no longer vanish), Steam support, screens above 1080p (e.g. a 4K TV) switched to the game's size while it runs, saber and Player 2 fixes.
+- **v1.1** (19 Nov 2026): split-screen drawing fixed (no flicker, no giant black walls or floating pieces of the level, players and walls no longer vanish), screens above 1080p (e.g. a 4K TV) switched to the game's size while it runs, saber and Player 2 fixes.
 - **v1.0** (11 Nov 2026): first release.
 
 ## Credits
