@@ -3,8 +3,7 @@
 > ## ⚠️ Compatibility: GOG version 1.2 ONLY
 >
 > This mod works **only** with the **GOG** release of *Star Wars: The Force Unleashed – Ultimate Sith Edition*, **version 1.2**.
-> It is **not** compatible with **Steam**, any other storefront, or any other version of the game **yet**.
-> On any other copy the mod switches itself off at start-up and the game runs as normal single player.
+> It is **not** compatible with **Steam**, any other storefront, or any other version of the game **yet** - please don't install it on those.
 
 > **Made for controllers.** Both players play with a gamepad. PC (mouse and keyboard) controls for Player 2 are **not implemented yet**.
 >
